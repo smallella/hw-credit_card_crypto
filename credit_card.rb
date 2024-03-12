@@ -1,6 +1,7 @@
 require_relative './luhn_validator.rb'
 require 'json'
 
+# CreditCard class
 class CreditCard
   # TODO: mixin the LuhnValidator using an 'include' statement
   include LuhnValidator
