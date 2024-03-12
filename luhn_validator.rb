@@ -1,5 +1,5 @@
-module LuhnValidator
-  # Validates credit card number using Luhn Algorithm
+ # Validates credit card number using Luhn Algorithm
+ module LuhnValidator
   # arguments: none
   # assumes: a local String called 'number' exists
   # returns: true/false whether last digit is correct
@@ -14,7 +14,7 @@ module LuhnValidator
     end.sum
 
     # Check if the sum % 10 == 0
-    (sum % 10)==0
+    (sum % 10).zero?
   end
 end
 
